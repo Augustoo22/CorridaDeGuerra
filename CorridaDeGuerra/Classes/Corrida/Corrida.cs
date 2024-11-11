@@ -1,30 +1,45 @@
 using System;
 using System.Collections.Generic;
 using CorridaDeGuerra.Classes.Carros;
+using CorridaDeGuerra.Classes.Utils;
 
 namespace CorridaDeGuerra.Classes.Corrida
 {
     public class Corrida
     {
         private List<Carro> carrosParticipantes;
+        private List<IObservador> observadores;
         private int distanciaDaCorrida;
 
         public Corrida(int distancia)
         {
             carrosParticipantes = new List<Carro>();
+            observadores = new List<IObservador>();
             distanciaDaCorrida = distancia;
+        }
+
+        public void AdicionarObservador(IObservador observador)
+        {
+            observadores.Add(observador);
+        }
+
+        private void NotificarObservadores(string mensagem)
+        {
+            foreach (var observador in observadores)
+            {
+                observador.Atualizar(mensagem);
+            }
         }
 
         public void AdicionarCarro(Carro carro)
         {
             carrosParticipantes.Add(carro);
-            Console.WriteLine($"{carro.Nome} foi adicionado à corrida!");
+            NotificarObservadores($"{carro.Nome} foi adicionado à corrida!");
         }
 
         public void Iniciar()
         {
-            Console.WriteLine("A corrida começou!");
-
+            NotificarObservadores("A corrida começou!");
             bool corridaEmAndamento = true;
 
             while (corridaEmAndamento)
@@ -38,7 +53,7 @@ namespace CorridaDeGuerra.Classes.Corrida
 
                     if (carro.Posicao >= distanciaDaCorrida)
                     {
-                        Console.WriteLine($"{carro.Nome} venceu a corrida!");
+                        NotificarObservadores($"{carro.Nome} venceu a corrida!");
                         corridaEmAndamento = false;
                         break;
                     }
@@ -50,6 +65,7 @@ namespace CorridaDeGuerra.Classes.Corrida
 
         private void ExibirOpcoes(Carro carro)
         {
+            NotificarObservadores($"{carro.Nome} está tomando uma ação.");
             Console.WriteLine($"\nTurno de {carro.Nome}:");
             Console.WriteLine("1. Acelerar");
             Console.WriteLine("2. Defender");
@@ -62,9 +78,11 @@ namespace CorridaDeGuerra.Classes.Corrida
             {
                 case "1":
                     carro.Acelerar();
+                    NotificarObservadores($"{carro.Nome} acelerou para a posição {carro.Posicao}.");
                     break;
                 case "2":
                     carro.Defender();
+                    NotificarObservadores($"{carro.Nome} está se defendendo, aumentando sua resistência.");
                     break;
                 case "3":
                     UsarHabilidadeEspecial(carro);
@@ -90,6 +108,7 @@ namespace CorridaDeGuerra.Classes.Corrida
             {
                 var oponente = carrosParticipantes[escolha - 1];
                 carro.UsarHabilidadeEspecial(oponente);
+                NotificarObservadores($"{carro.Nome} usou sua habilidade especial em {oponente.Nome}!");
             }
             else
             {
