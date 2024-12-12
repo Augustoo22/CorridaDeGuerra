@@ -1,0 +1,15 @@
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\bin\Debug\net8.0\CorridaDeGuerra.exe
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\bin\Debug\net8.0\CorridaDeGuerra.deps.json
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\bin\Debug\net8.0\CorridaDeGuerra.runtimeconfig.json
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\bin\Debug\net8.0\CorridaDeGuerra.dll
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\bin\Debug\net8.0\CorridaDeGuerra.pdb
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\CorridaDeGuerra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\CorridaDeGuerra.AssemblyInfoInputs.cache
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\CorridaDeGuerra.AssemblyInfo.cs
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\CorridaDeGuerra.csproj.CoreCompileInputs.cache
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\CorridaDeGuerra.sourcelink.json
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\CorridaDeGuerra.dll
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\refint\CorridaDeGuerra.dll
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\CorridaDeGuerra.pdb
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\CorridaDeGuerra.genruntimeconfig.cache
+C:\Users\victo\Documents\CorridaDeGuerra\CorridaDeGuerra\obj\Debug\net8.0\ref\CorridaDeGuerra.dll

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CorridaDeGuerra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82f4a3a741df931df4c2b765a0f2dc5708aa25d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a001b6393cf13af97a4322a582a2321db72dd8e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CorridaDeGuerra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CorridaDeGuerra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
